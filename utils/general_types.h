@@ -1,0 +1,32 @@
+/******************************************************************************
+*	Filename	:	general_types.h
+*	Developer	:	Eyal Weizman
+*	Last Update	:	2019-04-02
+*	Description	:	header file with common enums & typedefs
+*******************************************************************************/
+#ifndef     _GENERAL_TYPES_
+#define     _GENERAL_TYPES_
+
+/******************************** enums ***************************************/
+
+enum status
+{
+    FAILURE = -1,
+    SUCCESS = 0
+};
+
+enum boolean
+{
+    FALSE,
+    TRUE
+};
+
+
+/******************************** Type Definitions ****************************/
+
+typedef enum status status_t; 
+
+typedef enum boolean boolean_t; 
+
+
+#endif     /* _GENERAL_TYPES_ */
