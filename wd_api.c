@@ -129,7 +129,7 @@ static void InitCom(com_pack_t *com_pack)
 	sigaddset(&(com_pack->mask), SIGUSR1);
 	
 	/* saves the path to WD */
-	com_pack->who_to_revive = "watchdog.out";
+	com_pack->who_to_revive = "wd_outer.out";
 	
 	/* create a scheduler & load it with tasks + check */
 	if (SUCCESS == InitScheduler(com_pack))

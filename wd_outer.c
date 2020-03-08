@@ -32,8 +32,8 @@ int main(int argc, char *const argv[])
 	UNUSED(argc);
 	
 	#ifndef NDEBUG
-	printf("WD pid is: %d\n", getpid());
 	printf("\n *** WD: IM ALIVE!!!***\n\n");
+	printf("WD pid is: %d\n", getpid());
 	#endif
 	
 	com_pack.argv = argv;

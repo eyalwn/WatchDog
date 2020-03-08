@@ -1,7 +1,7 @@
 /******************************************************************************
 *	Filename	:	test.c
 *	Developer	:	Eyal Weizman
-*	Last Update	:	2019-05-11
+*	Last Update	:	2020-03-08
 *	Description	:	watchdog test file
 *******************************************************************************/
 #include <stdio.h> 		/* printf */
@@ -16,14 +16,14 @@ int main(int argc, char *const argv[])
 {
 	status_t ret_val = 0;
 	
-	printf("\n***** UNIT-TEST FOR WATCHDOG'S FUNCTIONS *****\n\n");
+	printf("\n***** TEST FOR WATCHDOG'S FUNCTIONS *****\n\n");
 	printf("\n========================================================\n\n");
 	
 	printf("APP pid is: %d\n", getpid());
 	
 	ret_val = WDKeepMeAlive(argc, argv);
 	
-	printf("\nret status from Kepp: %d\n\n", ret_val);
+	printf("\nret status from Keep: %d\n\n", ret_val);
 	
 	sleep(10);
 	
